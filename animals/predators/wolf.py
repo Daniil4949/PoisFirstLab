@@ -1,6 +1,6 @@
 import random
-from animals.predators.predator_class import Predator
-from animals.herbivores.herbivores import Herbivorous
+from animals.abstract_classes import Predator
+from animals.abstract_classes import Herbivorous
 
 
 class Wolf(Predator):
@@ -74,6 +74,9 @@ class Wolf(Predator):
     def die(self):
         if self.saturation <= 0 or self.age >= 20:
             del self
+
+    def __delete__(self):
+        del self
 
     def __str__(self) -> str:
         return f"Class: Wolf " \

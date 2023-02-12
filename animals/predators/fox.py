@@ -1,6 +1,6 @@
-from animals.predators.predator_class import Predator
+from animals.abstract_classes import Predator
 import random
-from animals.herbivores.herbivores import Herbivorous
+from animals.abstract_classes import Herbivorous
 
 
 class Fox(Predator):
@@ -45,6 +45,9 @@ class Fox(Predator):
     @property
     def gender(self) -> str:
         return self.__gender
+
+    def __delete__(self):
+        del self
 
     def move(self):
         print("Fox is running")

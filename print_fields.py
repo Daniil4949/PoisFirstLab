@@ -8,8 +8,8 @@ from plants.plant import Plant
 from animals.herbivores.roe import Roe
 from animals.herbivores.rabbit import Rabbit
 from fields.field import Field
-from animals.herbivores.herbivores import Herbivorous
-from animals.predators.predator_class import Predator
+from animals.abstract_classes import Herbivorous
+from animals.abstract_classes import Predator
 
 
 def illustrate(objects: list[Field]):
@@ -21,17 +21,16 @@ def illustrate(objects: list[Field]):
 
 
 def manipulate_fields(objects: list[Field]):
-    while True:
-        for element in objects:
-            for item in element.collection:
-                if isinstance(item, Plant):
-                    sleep(0.2)
-                    print(f"{item.name} just existing")
+    for element in objects:
+        for item in element.collection:
+            if isinstance(item, Plant):
+                sleep(0.2)
+                print(f"{item.name} just existing")
 
-                if isinstance(item, Herbivorous):
-                    discover(item, element.collection)
-                elif isinstance(item, Predator):
-                    discover(item, element.collection)
+            if isinstance(item, Herbivorous):
+                discover(item, element.collection)
+            elif isinstance(item, Predator):
+                discover(item, element.collection)
 
 
 def discover(item, collection):
@@ -40,7 +39,6 @@ def discover(item, collection):
             sleep(0.2)
             print(f"Herbivorous is eating")
             item.eat(obj)
-            obj.get_eaten()
         if type(item) == type(obj) and obj.gender != item.gender:
             item.multipy(obj)
             print("New animal on the field")

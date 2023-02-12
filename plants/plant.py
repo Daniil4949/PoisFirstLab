@@ -14,6 +14,9 @@ class Plant:
     def get_eaten(self):
         del self
 
+    def __delete__(self):
+        del self
+
     def __str__(self) -> str:
         return f"Plant: {self.__name}" \
                f" Value: {self.__value}"

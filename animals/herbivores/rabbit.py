@@ -1,6 +1,6 @@
-from animals.herbivores.herbivores import Herbivorous
 import random
 from plants.plant import Plant
+from animals.abstract_classes import Herbivorous
 
 
 class Rabbit(Herbivorous):
@@ -43,6 +43,9 @@ class Rabbit(Herbivorous):
     def move(self):
         print("Moving in the field")
 
+    def __delete__(self):
+        del self
+
     def eat(self, meal):
         if isinstance(meal, Plant):
             self.__saturation += meal.value
@@ -59,7 +62,9 @@ class Rabbit(Herbivorous):
         self.die()
 
     def die(self):
-        if self.saturation <= 0 or self.age >= 5:
+        if self.saturation <= 0:
+            del self
+        elif self.age >= 5:
             del self
 
     def __str__(self) -> str:

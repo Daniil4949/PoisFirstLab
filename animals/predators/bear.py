@@ -1,6 +1,6 @@
 import random
-from animals.predators.predator_class import Predator
-from animals.herbivores.herbivores import Herbivorous
+from animals.abstract_classes import Herbivorous
+from animals.abstract_classes import Predator
 
 
 class Bear(Predator):
@@ -71,6 +71,9 @@ class Bear(Predator):
     @property
     def strength(self) -> int:
         return self.__strength
+
+    def __delete__(self):
+        del self
 
     def __str__(self) -> str:
         return f"Class: Bear " \

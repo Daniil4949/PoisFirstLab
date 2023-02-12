@@ -1,6 +1,6 @@
-from animals.herbivores.herbivores import Herbivorous
 import random
 from plants.plant import Plant
+from animals.abstract_classes import Herbivorous
 
 
 class Roe(Herbivorous):
@@ -56,6 +56,9 @@ class Roe(Herbivorous):
     def get_hungry(self):
         self.__saturation -= 1
         self.die()
+
+    def __delete__(self):
+        del self
 
     def die(self):
         if self.saturation <= 0 or self.age >= 7:

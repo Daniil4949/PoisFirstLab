@@ -29,7 +29,10 @@ def from_json():
             field = Field(id=item[0], collection=[])
             for i in range(len(element)):
                 if "Fox" in list(element[i].keys())[0]:
-                    field.collection.append(Fox(*list(element[i].values())))
+                    fox = Fox(*list(element[i].values()))
+                    fox.die()
+                    if fox is not None:
+                        field.collection.append(fox)
                 if "Wolf" in list(element[i].keys())[0]:
                     field.collection.append(Wolf(*list(element[i].values())))
                 if "Bear" in list(element[i].keys())[0]:
@@ -52,8 +55,9 @@ def main():
     #                                  Roe(gender="female"), Bear(gender="male"), Fox(gender="female"),
     #                                  Wolf(gender="male")])
     #     result.append(field)
-    # objects = from_json()
-    # info = to_json(objects)
+    # # objects = from_json()
+    # info = to_json(result)
+    # print(info)
     # with open("state.json", "w") as file:
     #     file.write(json.dumps(info))
     lst = from_json()

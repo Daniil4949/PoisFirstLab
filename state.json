@@ -19,48 +19,48 @@
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -57,
+        "_Rabbit__saturation": 3,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 40
+        "_Rabbit__age": 0
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -57,
+        "_Rabbit__saturation": 3,
         "_Rabbit__gender": "male",
-        "_Rabbit__age": 40
+        "_Rabbit__age": 0
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": -15,
+        "_Roe__saturation": 5,
         "_Roe__gender": "male",
-        "_Roe__age": 40
+        "_Roe__age": 0
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": -15,
+        "_Roe__saturation": 5,
         "_Roe__gender": "female",
-        "_Roe__age": 40
+        "_Roe__age": 0
       },
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 79,
+        "_Bear__saturation": 9,
         "_Bear__gender": "male",
-        "_Bear__age": 8
+        "_Bear__age": 0
       },
       {
         "_Fox__size": 5,
         "_Fox__strength": 4,
-        "_Fox__saturation": 16,
+        "_Fox__saturation": 4,
         "_Fox__gender": "female",
-        "_Fox__age": 68
+        "_Fox__age": 0
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 64,
+        "_Wolf__saturation": 4,
         "_Wolf__gender": "male",
-        "_Wolf__age": 20
+        "_Wolf__age": 0
       }
     ]
   },
@@ -84,48 +84,48 @@
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -21,
+        "_Rabbit__saturation": 3,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 16
+        "_Rabbit__age": 0
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -12,
+        "_Rabbit__saturation": 3,
         "_Rabbit__gender": "male",
-        "_Rabbit__age": 11
+        "_Rabbit__age": 0
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 1,
+        "_Roe__saturation": 5,
         "_Roe__gender": "male",
-        "_Roe__age": 8
+        "_Roe__age": 0
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 1,
+        "_Roe__saturation": 5,
         "_Roe__gender": "female",
-        "_Roe__age": 8
+        "_Roe__age": 0
       },
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 30,
+        "_Bear__saturation": 9,
         "_Bear__gender": "male",
         "_Bear__age": 0
       },
       {
         "_Fox__size": 5,
         "_Fox__strength": 4,
-        "_Fox__saturation": 7,
+        "_Fox__saturation": 4,
         "_Fox__gender": "female",
-        "_Fox__age": 16
+        "_Fox__age": 0
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 12,
+        "_Wolf__saturation": 4,
         "_Wolf__gender": "male",
-        "_Wolf__age": 8
+        "_Wolf__age": 0
       }
     ]
   },
@@ -149,32 +149,32 @@
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -9,
+        "_Rabbit__saturation": 3,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 8
+        "_Rabbit__age": 0
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -9,
+        "_Rabbit__saturation": 3,
         "_Rabbit__gender": "male",
-        "_Rabbit__age": 8
+        "_Rabbit__age": 0
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 1,
+        "_Roe__saturation": 5,
         "_Roe__gender": "male",
-        "_Roe__age": 8
+        "_Roe__age": 0
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 1,
+        "_Roe__saturation": 5,
         "_Roe__gender": "female",
-        "_Roe__age": 8
+        "_Roe__age": 0
       },
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 27,
+        "_Bear__saturation": 9,
         "_Bear__gender": "male",
         "_Bear__age": 0
       },
@@ -183,14 +183,14 @@
         "_Fox__strength": 4,
         "_Fox__saturation": 4,
         "_Fox__gender": "female",
-        "_Fox__age": 16
+        "_Fox__age": 0
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 9,
+        "_Wolf__saturation": 4,
         "_Wolf__gender": "male",
-        "_Wolf__age": 8
+        "_Wolf__age": 0
       }
     ]
   },

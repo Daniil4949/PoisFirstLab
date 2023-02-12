@@ -23,3 +23,11 @@ class Animal(ABC):
 
     def get_fed(self, value: int):
         pass
+
+
+class Herbivorous(Animal):
+    pass
+
+
+class Predator(Animal):
+    pass
