@@ -1,55 +1,68 @@
-from herbivores import Herbivorous
+from animals.herbivores.herbivores import Herbivorous
 import random
 from plants.plant import Plant
 
 
 class Roe(Herbivorous):
-    def __init__(self, size: int = 5, saturation: int=5, gender: str = "male"):
-        super().__init__(size=size, strength=None, saturation=saturation, gender=gender)
-        self.__age: int = 0
+    def __init__(self, size: int = 5, saturation: int = 5,
+                 gender: str = "male", age: int = 0):
+        self.__size: int = size
+        self.__saturation: int = saturation
+        self.__gender: str = gender
+        self.__age: int = age
 
+    @property
+    def age(self) -> int:
+        return self.__age
 
-def multipy(self, other):
-    if isinstance(other, Roe):
-        if other.gender != self.gender:
-            return Roe(size=int((self.size + other.size) / 2),
-                       saturation=int((self.saturation + other.saturation) / 2),
-                       gender=random.choices(['male', 'female'])
-                       )
+    @property
+    def size(self) -> int:
+        return self.__size
+
+    @property
+    def saturation(self) -> int:
+        return self.__saturation
+
+    @property
+    def gender(self) -> str:
+        return self.__gender
+
+    def multipy(self, other):
+        if isinstance(other, Roe):
+            if other.gender != self.gender:
+                return Roe(size=int((self.size + other.size) / 2),
+                           saturation=int((self.saturation + other.saturation) / 2),
+                           gender=random.choices(['male', 'female'])
+                           )
+            else:
+                print("Different genders are needed for multipy")
         else:
-            raise Exception("Different genders are needed")
-    else:
-        raise Exception("The same type is needed")
+            print("The same type is needed for multipy")
 
+    def move(self):
+        print("Roe is running")
 
-def move(self):
-    pass
+    def eat(self, meal):
+        if isinstance(meal, Plant):
+            self.__saturation += meal.value
+            del meal
+        else:
+            print("Only plants can be eaten by roe")
 
+    def get_old(self):
+        self.__age += 1
+        self.die()
 
-def eat(self, meal):
-    if isinstance(meal, Plant):
-        self.__saturation += meal.value
-    else:
-        raise Exception("Only plants can be eaten")
+    def get_hungry(self):
+        self.__saturation -= 1
+        self.die()
 
+    def die(self):
+        if self.saturation <= 0 or self.age >= 7:
+            del self
 
-def get_old(self):
-    self.__age += 1
-    self.__die()
-
-
-def get_hungry(self):
-    self.__saturation -= 1
-    self.__die()
-
-
-def __die(self):
-    if self.saturation <= 0 or self.age >= 7:
-        del self
-
-
-def __str__(self) -> str:
-    return f"Class: Roe " \
-           f"Saturation: {self.saturation}" \
-           f"Size: {self.size}" \
-           f"Age: {self.age}"
+    def __str__(self) -> str:
+        return f"Class: Roe " \
+               f"Saturation: {self.__saturation} " \
+               f"Size: {self.__size} " \
+               f"Age: {self.__age} "

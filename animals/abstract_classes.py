@@ -6,7 +6,7 @@ class Animal(ABC):
     def multipy(self, other):
         pass
 
-    def __die(self):
+    def die(self):
         pass
 
     def eat(self, meal):

@@ -11,6 +11,9 @@ class Plant:
     def value(self) -> int:
         return self.__value
 
+    def get_eaten(self):
+        del self
+
     def __str__(self) -> str:
         return f"Plant: {self.__name}" \
                f" Value: {self.__value}"

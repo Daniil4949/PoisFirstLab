@@ -1,13 +1,18 @@
 import random
-from predator import Predator
+from animals.predators.predator_class import Predator
 from animals.herbivores.herbivores import Herbivorous
 
 
 class Wolf(Predator):
 
-    def __init__(self, size: int = 5, strength: int = 7, saturation: int = 4, gender: str = "male"):
-        super().__init__(size=size, strength=strength, saturation=saturation, gender=gender)
-        self.__age: int = 0
+    def __init__(self, size: int = 5, strength: int = 7, saturation: int = 4,
+                 gender: str = "male", age: int = 0):
+        # super().__init__(size=size, strength=strength, saturation=saturation, gender=gender)
+        self.__size: int = size
+        self.__strength: int = strength
+        self.__saturation: int = saturation
+        self.__gender: str = gender
+        self.__age: int = age
 
     def multipy(self, other):
         if isinstance(other, Wolf):
@@ -18,12 +23,32 @@ class Wolf(Predator):
                             gender=random.choices(['male', 'female'])
                             )
             else:
-                raise Exception("Different genders are needed")
+                print("Different genders are needed")
         else:
-            raise Exception("The same type is needed")
+            print("The same type is needed")
 
     def move(self):
-        pass
+        print("Bear is moving")
+
+    @property
+    def strength(self) -> int:
+        return self.__strength
+
+    @property
+    def age(self) -> int:
+        return self.__age
+
+    @property
+    def size(self) -> int:
+        return self.__size
+
+    @property
+    def saturation(self) -> int:
+        return self.__saturation
+
+    @property
+    def gender(self) -> str:
+        return self.__gender
 
     def eat(self, meal):
         if not isinstance(meal, Wolf):
@@ -36,23 +61,23 @@ class Wolf(Predator):
                 else:
                     del self
         else:
-            raise Exception("Cannibalism does not exist in this game")
+            print("Cannibalism does not exist in this game")
 
     def get_old(self):
         self.__age += 1
-        self.__die()
+        self.die()
 
     def get_hungry(self):
         self.__saturation -= 2
-        self.__die()
+        self.die()
 
-    def __die(self):
+    def die(self):
         if self.saturation <= 0 or self.age >= 20:
             del self
 
     def __str__(self) -> str:
         return f"Class: Wolf " \
-               f"Saturation: {self.saturation}" \
-               f"Strength: {self.strength}" \
-               f"Size: {self.size}" \
-               f"Age: {self.age}"
+               f"Saturation: {self.__saturation} " \
+               f"Strength: {self.__strength} " \
+               f"Size: {self.__size} " \
+               f"Age: {self.__age} "
