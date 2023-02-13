@@ -22,9 +22,9 @@ class Bear(Predator):
                             gender=random.choices(['male', 'female'])
                             )
             else:
-                raise Exception("Different genders are needed")
+                print("Different genders are needed")
         else:
-            raise Exception("The same type is needed")
+            print("The same type is needed")
 
     def move(self):
         print("Bear is hunting")

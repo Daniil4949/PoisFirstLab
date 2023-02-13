@@ -40,32 +40,35 @@ class Rabbit(Herbivorous):
     def gender(self) -> str:
         return self.__gender
 
-    def move(self):
+    def move(self) -> None:
         print("Moving in the field")
 
-    def __del__(self):
+    def __del__(self) -> None:
         del self
 
-    def die(self):
+    def die(self) -> None:
         if self.__age >= 5:
             del self
         elif self.__saturation <= 0:
             del self
 
-    def eat(self, meal):
+    def eat(self, meal) -> None:
         if isinstance(meal, Plant):
             self.__saturation += meal.value
             meal.die()
         else:
             print("Only plants can be eaten by rabbit")
 
-    def get_old(self):
+    def get_old(self) -> None:
         self.__age += 1
         self.die()
 
-    def get_hungry(self):
+    def get_hungry(self) -> None:
         self.__saturation -= 1
         self.die()
+
+    def __eq__(self, other):
+        return self.__dict__ == other.__dict__
 
     def __str__(self) -> str:
         return f"Class: Wolf " \

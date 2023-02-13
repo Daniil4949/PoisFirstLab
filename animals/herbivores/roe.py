@@ -49,18 +49,18 @@ class Roe(Herbivorous):
         else:
             print("Only plants can be eaten by roe")
 
-    def get_old(self):
+    def get_old(self) -> None:
         self.__age += 1
         self.die()
 
-    def get_hungry(self):
+    def get_hungry(self) -> None:
         self.__saturation -= 1
         self.die()
 
-    def __del__(self):
+    def __del__(self) -> None:
         del self
 
-    def die(self):
+    def die(self) -> None:
         if self.__age >= 10:
             del self
         elif self.__saturation <= 0:

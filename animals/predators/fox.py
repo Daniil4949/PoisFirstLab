@@ -22,9 +22,9 @@ class Fox(Predator):
                            gender=random.choices(['male', 'female'])
                            )
             else:
-                raise Exception("Different genders are needed")
+                print("Different genders are needed")
         else:
-            raise Exception("The same type is needed")
+            print("The same type is needed")
 
     @property
     def strength(self) -> int:

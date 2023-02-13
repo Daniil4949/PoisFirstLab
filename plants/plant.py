@@ -24,10 +24,10 @@ class Plant:
             print(f'{self.__name} died')
             del self
 
-    def get_eaten(self):
+    def get_eaten(self) -> None:
         del self
 
-    def __delete__(self):
+    def __delete__(self) -> None:
         del self
 
     def __str__(self) -> str:
