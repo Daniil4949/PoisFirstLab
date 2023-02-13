@@ -7,7 +7,6 @@ class Wolf(Predator):
 
     def __init__(self, size: int = 5, strength: int = 7, saturation: int = 4,
                  gender: str = "male", age: int = 0):
-        # super().__init__(size=size, strength=strength, saturation=saturation, gender=gender)
         self.__size: int = size
         self.__strength: int = strength
         self.__saturation: int = saturation
@@ -57,7 +56,6 @@ class Wolf(Predator):
             elif isinstance(meal, Predator):
                 if self.__strength >= meal.strength:
                     self.__saturation += meal.size
-                    del meal
                 else:
                     del self
         else:
@@ -72,10 +70,10 @@ class Wolf(Predator):
         self.die()
 
     def die(self):
-        if self.saturation <= 0 or self.age >= 20:
+        if self.__saturation <= 0 or self.__age >= 10:
             del self
 
-    def __delete__(self):
+    def __del__(self):
         del self
 
     def __str__(self) -> str:

@@ -2,26 +2,10 @@
   "1": {
     "collection": [
       {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": 3,
+        "_Rabbit__saturation": -1,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 0
+        "_Rabbit__age": 6
       },
       {
         "_Rabbit__size": 3,
@@ -37,28 +21,28 @@
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 5,
+        "_Roe__saturation": 1,
         "_Roe__gender": "female",
-        "_Roe__age": 0
+        "_Roe__age": 5
       },
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 9,
+        "_Bear__saturation": 22,
         "_Bear__gender": "male",
         "_Bear__age": 0
       },
       {
         "_Fox__size": 5,
         "_Fox__strength": 4,
-        "_Fox__saturation": 4,
+        "_Fox__saturation": 2,
         "_Fox__gender": "female",
-        "_Fox__age": 0
+        "_Fox__age": 10
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 4,
+        "_Wolf__saturation": 17,
         "_Wolf__gender": "male",
         "_Wolf__age": 0
       }
@@ -67,26 +51,10 @@
   "2": {
     "collection": [
       {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1
-      },
-      {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": 3,
+        "_Rabbit__saturation": -1,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 0
+        "_Rabbit__age": 6
       },
       {
         "_Rabbit__size": 3,
@@ -102,28 +70,28 @@
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 5,
+        "_Roe__saturation": 1,
         "_Roe__gender": "female",
-        "_Roe__age": 0
+        "_Roe__age": 5
       },
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 9,
+        "_Bear__saturation": 22,
         "_Bear__gender": "male",
         "_Bear__age": 0
       },
       {
         "_Fox__size": 5,
         "_Fox__strength": 4,
-        "_Fox__saturation": 4,
+        "_Fox__saturation": 2,
         "_Fox__gender": "female",
-        "_Fox__age": 0
+        "_Fox__age": 10
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 4,
+        "_Wolf__saturation": 17,
         "_Wolf__gender": "male",
         "_Wolf__age": 0
       }
@@ -133,19 +101,23 @@
     "collection": [
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 1
       },
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 1
       },
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 0
       },
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 0
       },
       {
         "_Rabbit__size": 3,
@@ -198,19 +170,23 @@
     "collection": [
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 0
       },
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 0
       },
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 0
       },
       {
         "_Plant__name": "flower",
-        "_Plant__value": 1
+        "_Plant__value": 1,
+        "_Plant__age": 0
       },
       {
         "_Rabbit__size": 3,

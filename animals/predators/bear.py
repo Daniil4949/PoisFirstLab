@@ -11,7 +11,7 @@ class Bear(Predator):
         self.__strength: int = strength
         self.__saturation: int = saturation
         self.__gender: str = gender
-        self.__age: int = 0
+        self.__age: int = age
 
     def multipy(self, other):
         if isinstance(other, Bear):
@@ -27,7 +27,7 @@ class Bear(Predator):
             raise Exception("The same type is needed")
 
     def move(self):
-        pass
+        print("Bear is hunting")
 
     def eat(self, meal: (Predator, Herbivorous)):
         if not isinstance(meal, Bear):
@@ -36,7 +36,6 @@ class Bear(Predator):
             elif isinstance(meal, Predator):
                 if self.__strength >= meal.strength:
                     self.__saturation += meal.size
-                    del meal
                 else:
                     del self
         else:
@@ -49,8 +48,7 @@ class Bear(Predator):
         self.__saturation -= 1
 
     def die(self):
-        if self.saturation <= 0 or self.age >= 30:
-            del self
+        del self
 
     @property
     def age(self) -> int:
@@ -72,7 +70,7 @@ class Bear(Predator):
     def strength(self) -> int:
         return self.__strength
 
-    def __delete__(self):
+    def __del__(self):
         del self
 
     def __str__(self) -> str:

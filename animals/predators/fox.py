@@ -59,7 +59,6 @@ class Fox(Predator):
             elif isinstance(meal, Predator):
                 if self.__strength >= meal.strength:
                     self.__saturation += meal.size
-                    del meal
                 else:
                     del self
         else:
@@ -74,8 +73,11 @@ class Fox(Predator):
         self.die()
 
     def die(self):
-        if self.saturation <= 0 or self.age >= 15:
+        if self.__age >= 5 or self.__saturation <= 0:
             del self
+
+    def __del__(self):
+        del self
 
     def __str__(self) -> str:
         return f"Class: Fox " \

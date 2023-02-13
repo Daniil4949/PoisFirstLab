@@ -6,8 +6,12 @@ from plants.plant import Plant
 from animals.herbivores.roe import Roe
 from animals.herbivores.rabbit import Rabbit
 from fields.field import Field
-from print_fields import illustrate, manipulate_fields
-from time import sleep
+from print_fields import manipulate_fields
+
+collection = [Plant(), Plant(), Plant(), Plant(),
+              Rabbit(gender="female"), Rabbit(gender="male"), Roe(gender="male"),
+              Roe(gender="female"), Bear(gender="male"), Fox(gender="female"),
+              Wolf(gender="male")]
 
 
 def to_json(data: list[Field]) -> dict:
@@ -29,10 +33,7 @@ def from_json():
             field = Field(id=item[0], collection=[])
             for i in range(len(element)):
                 if "Fox" in list(element[i].keys())[0]:
-                    fox = Fox(*list(element[i].values()))
-                    fox.die()
-                    if fox is not None:
-                        field.collection.append(fox)
+                    field.collection.append(Fox(*list(element[i].values())))
                 if "Wolf" in list(element[i].keys())[0]:
                     field.collection.append(Wolf(*list(element[i].values())))
                 if "Bear" in list(element[i].keys())[0]:
@@ -47,19 +48,18 @@ def from_json():
     return objects
 
 
+def create_collection():
+    result = []
+    for i in range(1, 5):
+        field = Field(i, collection=collection)
+        result.append(field)
+    info = to_json(result)
+    with open("state.json", "w") as file:
+        file.write(json.dumps(info))
+
+
 def main():
-    # result = []
-    # for i in range(1, 5):
-    #     field = Field(i, collection=[Plant(), Plant(), Plant(), Plant(),
-    #                                  Rabbit(gender="female"), Rabbit(gender="male"), Roe(gender="male"),
-    #                                  Roe(gender="female"), Bear(gender="male"), Fox(gender="female"),
-    #                                  Wolf(gender="male")])
-    #     result.append(field)
-    # # objects = from_json()
-    # info = to_json(result)
-    # print(info)
-    # with open("state.json", "w") as file:
-    #     file.write(json.dumps(info))
+    # create_collection()
     lst = from_json()
     try:
         while True:
@@ -68,7 +68,7 @@ def main():
         dict_data = to_json(lst)
         with open("state.json", "w") as file:
             file.write(json.dumps(dict_data))
-        print('\nBy!')
+        print('\nBy!\n')
 
 
 if __name__ == "__main__":

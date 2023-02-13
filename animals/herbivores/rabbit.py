@@ -43,13 +43,19 @@ class Rabbit(Herbivorous):
     def move(self):
         print("Moving in the field")
 
-    def __delete__(self):
+    def __del__(self):
         del self
+
+    def die(self):
+        if self.__age >= 5:
+            del self
+        elif self.__saturation <= 0:
+            del self
 
     def eat(self, meal):
         if isinstance(meal, Plant):
             self.__saturation += meal.value
-            del meal
+            meal.die()
         else:
             print("Only plants can be eaten by rabbit")
 
@@ -58,14 +64,8 @@ class Rabbit(Herbivorous):
         self.die()
 
     def get_hungry(self):
-        self.__saturation -= 2
+        self.__saturation -= 1
         self.die()
-
-    def die(self):
-        if self.saturation <= 0:
-            del self
-        elif self.age >= 5:
-            del self
 
     def __str__(self) -> str:
         return f"Class: Wolf " \
