@@ -14,6 +14,11 @@ class Wolf(Predator):
         self.__age: int = age
 
     def multipy(self, other):
+        """
+            :param other: Wolf
+            :return: (Wolf, None)
+            Works only with wolf with another gender
+        """
         if isinstance(other, Wolf):
             if other.gender != self.gender:
                 return Wolf(size=int((self.size + other.size) / 2),
@@ -50,6 +55,11 @@ class Wolf(Predator):
         return self.__gender
 
     def eat(self, meal):
+        """
+            :param meal: Plant
+            :return: None
+            Predators cannot eat each other
+        """
         if not isinstance(meal, Wolf):
             if isinstance(meal, Herbivorous):
                 self.__saturation += meal.size

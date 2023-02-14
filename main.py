@@ -15,6 +15,7 @@ collection = [Plant(), Plant(), Plant(), Plant(),
 
 
 def to_json(data: list[Field]) -> dict:
+    """Serialization of objects"""
     info = dict()
     for i in range(len(data)):
         item = {i + 1: {
@@ -24,6 +25,7 @@ def to_json(data: list[Field]) -> dict:
 
 
 def from_json():
+    """Deserialization of objects from JSON file"""
     objects = []
     with open("state.json", "r") as file:
         result = file.read()
@@ -49,6 +51,7 @@ def from_json():
 
 
 def create_collection():
+    """Creating new animal world"""
     result = []
     for i in range(1, 5):
         field = Field(i, collection=collection)
@@ -72,4 +75,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # entrypoint
     main()

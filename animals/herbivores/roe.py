@@ -28,6 +28,11 @@ class Roe(Herbivorous):
         return self.__gender
 
     def multipy(self, other):
+        """
+                :param other: Roe
+                :return: (Roe, None)
+                Works only with roe with another gender
+        """
         if isinstance(other, Roe):
             if other.gender != self.gender:
                 return Roe(size=int((self.size + other.size) / 2),
@@ -43,6 +48,11 @@ class Roe(Herbivorous):
         print("Roe is running")
 
     def eat(self, meal):
+        """
+            :param meal: Plant
+            :return: None
+            Roe can eat plants only
+        """
         if isinstance(meal, Plant):
             self.__saturation += meal.value
             meal.die()

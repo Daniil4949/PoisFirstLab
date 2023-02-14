@@ -13,6 +13,11 @@ class Rabbit(Herbivorous):
         self.__age: int = age
 
     def multipy(self, other):
+        """
+        :param other: Rabbit
+        :return: (Rabbit, None)
+        Works only with rabbit with another gender
+        """
         if isinstance(other, Rabbit):
             if other.gender != self.gender:
                 return Rabbit(size=int((self.size + other.size) / 2),
@@ -53,6 +58,11 @@ class Rabbit(Herbivorous):
             del self
 
     def eat(self, meal) -> None:
+        """
+        :param meal: Plant
+        :return: None
+        Rabbit can eat plants only
+        """
         if isinstance(meal, Plant):
             self.__saturation += meal.value
             meal.die()
