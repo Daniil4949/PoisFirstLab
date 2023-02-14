@@ -3,15 +3,64 @@
     "collection": [
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -5,
+        "_Rabbit__saturation": -13,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 10
+        "_Rabbit__age": 18
       },
       {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": -1,
+        "_Rabbit__saturation": -9,
         "_Rabbit__gender": "male",
-        "_Rabbit__age": 4
+        "_Rabbit__age": 12
+      },
+      {
+        "_Roe__size": 5,
+        "_Roe__saturation": -7,
+        "_Roe__gender": "male",
+        "_Roe__age": 12
+      },
+      {
+        "_Roe__size": 5,
+        "_Roe__saturation": -11,
+        "_Roe__gender": "female",
+        "_Roe__age": 17
+      },
+      {
+        "_Bear__size": 10,
+        "_Bear__strength": 10,
+        "_Bear__saturation": 85,
+        "_Bear__gender": "male",
+        "_Bear__age": 15
+      },
+      {
+        "_Fox__size": 5,
+        "_Fox__strength": 4,
+        "_Fox__saturation": 20,
+        "_Fox__gender": "female",
+        "_Fox__age": 40
+      },
+      {
+        "_Wolf__size": 5,
+        "_Wolf__strength": 7,
+        "_Wolf__saturation": 50,
+        "_Wolf__gender": "male",
+        "_Wolf__age": 15
+      }
+    ]
+  },
+  "2": {
+    "collection": [
+      {
+        "_Rabbit__size": 3,
+        "_Rabbit__saturation": -9,
+        "_Rabbit__gender": "female",
+        "_Rabbit__age": 14
+      },
+      {
+        "_Rabbit__size": 3,
+        "_Rabbit__saturation": -5,
+        "_Rabbit__gender": "male",
+        "_Rabbit__age": 8
       },
       {
         "_Roe__size": 5,
@@ -28,27 +77,27 @@
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 43,
+        "_Bear__saturation": 49,
         "_Bear__gender": "male",
         "_Bear__age": 5
       },
       {
         "_Fox__size": 5,
         "_Fox__strength": 4,
-        "_Fox__saturation": 8,
+        "_Fox__saturation": 14,
         "_Fox__gender": "female",
         "_Fox__age": 20
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 28,
+        "_Wolf__saturation": 34,
         "_Wolf__gender": "male",
         "_Wolf__age": 5
       }
     ]
   },
-  "2": {
+  "3": {
     "collection": [
       {
         "_Rabbit__size": 3,
@@ -97,102 +146,13 @@
       }
     ]
   },
-  "3": {
-    "collection": [
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 1
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 0
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 0
-      },
-      {
-        "_Rabbit__size": 3,
-        "_Rabbit__saturation": 3,
-        "_Rabbit__gender": "female",
-        "_Rabbit__age": 0
-      },
-      {
-        "_Rabbit__size": 3,
-        "_Rabbit__saturation": 3,
-        "_Rabbit__gender": "male",
-        "_Rabbit__age": 0
-      },
-      {
-        "_Roe__size": 5,
-        "_Roe__saturation": 5,
-        "_Roe__gender": "male",
-        "_Roe__age": 0
-      },
-      {
-        "_Roe__size": 5,
-        "_Roe__saturation": 5,
-        "_Roe__gender": "female",
-        "_Roe__age": 0
-      },
-      {
-        "_Bear__size": 10,
-        "_Bear__strength": 10,
-        "_Bear__saturation": 9,
-        "_Bear__gender": "male",
-        "_Bear__age": 0
-      },
-      {
-        "_Fox__size": 5,
-        "_Fox__strength": 4,
-        "_Fox__saturation": 4,
-        "_Fox__gender": "female",
-        "_Fox__age": 0
-      },
-      {
-        "_Wolf__size": 5,
-        "_Wolf__strength": 7,
-        "_Wolf__saturation": 4,
-        "_Wolf__gender": "male",
-        "_Wolf__age": 0
-      }
-    ]
-  },
   "4": {
     "collection": [
       {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 0
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 0
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 0
-      },
-      {
-        "_Plant__name": "flower",
-        "_Plant__value": 1,
-        "_Plant__age": 0
-      },
-      {
         "_Rabbit__size": 3,
-        "_Rabbit__saturation": 3,
+        "_Rabbit__saturation": -1,
         "_Rabbit__gender": "female",
-        "_Rabbit__age": 0
+        "_Rabbit__age": 6
       },
       {
         "_Rabbit__size": 3,
@@ -208,28 +168,28 @@
       },
       {
         "_Roe__size": 5,
-        "_Roe__saturation": 5,
+        "_Roe__saturation": 1,
         "_Roe__gender": "female",
-        "_Roe__age": 0
+        "_Roe__age": 5
       },
       {
         "_Bear__size": 10,
         "_Bear__strength": 10,
-        "_Bear__saturation": 9,
+        "_Bear__saturation": 22,
         "_Bear__gender": "male",
         "_Bear__age": 0
       },
       {
         "_Fox__size": 5,
         "_Fox__strength": 4,
-        "_Fox__saturation": 4,
+        "_Fox__saturation": 2,
         "_Fox__gender": "female",
-        "_Fox__age": 0
+        "_Fox__age": 10
       },
       {
         "_Wolf__size": 5,
         "_Wolf__strength": 7,
-        "_Wolf__saturation": 4,
+        "_Wolf__saturation": 17,
         "_Wolf__gender": "male",
         "_Wolf__age": 0
       }

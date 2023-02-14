@@ -1,23 +1,29 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Animal(ABC):
 
+    @abstractmethod
     def multipy(self, other):
         pass
 
+    @abstractmethod
     def die(self):
         pass
 
+    @abstractmethod
     def eat(self, meal):
         pass
 
+    @abstractmethod
     def move(self):
         pass
 
+    @abstractmethod
     def get_old(self):
         pass
 
+    @abstractmethod
     def get_hungry(self):
         pass
 
