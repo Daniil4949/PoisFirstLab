@@ -5,7 +5,7 @@ from animals.abstract_classes import Herbivorous
 
 class Rabbit(Herbivorous):
 
-    def __init__(self, size: int = 3, saturation: int = 3,
+    def __init__(self, size: int = 3, saturation: int = 10,
                  gender: str = "male", age: int = 0):
         self.__size: int = size
         self.__saturation: int = saturation
@@ -49,6 +49,9 @@ class Rabbit(Herbivorous):
         print("Moving in the field")
 
     def __del__(self) -> None:
+        del self
+
+    def __delete__(self) -> None:
         del self
 
     def die(self) -> None:

@@ -58,7 +58,8 @@ class Bear(Predator):
         self.__saturation -= 1
 
     def die(self):
-        del self
+        if self.__saturation <= 0 or self.__age >= 10:
+            del self
 
     @property
     def age(self) -> int:
@@ -81,6 +82,9 @@ class Bear(Predator):
         return self.__strength
 
     def __del__(self):
+        del self
+
+    def __delete__(self) -> None:
         del self
 
     def __str__(self) -> str:

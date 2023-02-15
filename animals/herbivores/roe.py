@@ -4,7 +4,7 @@ from animals.abstract_classes import Herbivorous
 
 
 class Roe(Herbivorous):
-    def __init__(self, size: int = 5, saturation: int = 5,
+    def __init__(self, size: int = 5, saturation: int = 10,
                  gender: str = "male", age: int = 0):
         self.__size: int = size
         self.__saturation: int = saturation
@@ -68,6 +68,9 @@ class Roe(Herbivorous):
         self.die()
 
     def __del__(self) -> None:
+        del self
+
+    def __delete__(self) -> None:
         del self
 
     def die(self) -> None:

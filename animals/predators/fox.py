@@ -89,6 +89,8 @@ class Fox(Predator):
     def __del__(self):
         del self
 
+
+
     def __str__(self) -> str:
         return f"Class: Fox " \
                f"Saturation: {self.__saturation} " \

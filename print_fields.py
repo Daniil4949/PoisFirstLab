@@ -24,6 +24,9 @@ def manipulate_fields(objects: list[Field]):
                 item.die()
             if isinstance(item, Herbivorous):
                 discover(item, element.collection)
+                item.get_hungry()
+                item.get_old()
+                item.die()
             elif isinstance(item, Predator):
                 discover(item, element.collection)
                 item.get_hungry()
@@ -41,13 +44,16 @@ def discover(item, collection):
         if type(item) == type(obj) and obj.gender != item.gender:
             item.multipy(obj)
             print("New animal on the field")
+        if isinstance(item, Predator):
+            print(f"Predator is eating")
+            item.eat(obj)
+            obj.die()
+            print("Animal died")
         if isinstance(obj, Predator):
             print(f"Predator is eating")
             obj.eat(item)
             item.die()
             print("Animal died")
-            continue
         item.get_hungry()
         item.get_old()
         item.die()
-        continue

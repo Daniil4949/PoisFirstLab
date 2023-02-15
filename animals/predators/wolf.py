@@ -86,6 +86,9 @@ class Wolf(Predator):
     def __del__(self):
         del self
 
+    def __delete__(self) -> None:
+        del self
+
     def __str__(self) -> str:
         return f"Class: Wolf " \
                f"Saturation: {self.__saturation} " \
